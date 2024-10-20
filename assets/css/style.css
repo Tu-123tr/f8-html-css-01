@@ -578,7 +578,12 @@ a {
     height: 28px;
     display: flex;
     justify-content: center;
+    border-radius: 3px;
+    background: #f9f9f9;
     align-items: center;
+}
+.footer .social-link:not(:last-child) {
+    margin-right: 16px;
 }
 .footer .social-link:hover {
     background-color: #ebebeb;
