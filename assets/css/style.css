@@ -44,7 +44,17 @@ a {
     overflow: hidden;
 }
 /* header */
-.header {
+.fix-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.hero-wrap {
+    /* để xóa margin collapse */
+    display: flex;
+    flex-direction: column;
     position: relative;
     background: #e6f0ff;
     height: 100vh;
@@ -53,7 +63,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
+    /* width: 100vw; */
 }
 .navbar ul {
     display: flex;
